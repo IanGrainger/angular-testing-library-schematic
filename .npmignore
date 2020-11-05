@@ -1,0 +1,3 @@
+# Ignores TypeScript files, but keeps definitions.
+# *.ts # we can't - we need the template!
+!*.d.ts
