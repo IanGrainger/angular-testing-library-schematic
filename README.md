@@ -1,6 +1,26 @@
-# Getting Started With Schematics
+# Angular Testing Library Schematic
 
-This repository is a basic Schematic implementation that serves as a starting point to create and publish Schematics to NPM.
+## The problem
+
+Using `ng g c my-component` gives you a sparkly new spec file to write your test in. But what if you are using the awesome angular-testing-library?
+
+## This solution
+
+This package gives you a schematic that you can use to overwrite the default spec file with a _super_-sparkly angular-testing-library version!
+
+## Installation
+
+Because the package name matters, npm install with an alias - I recommend `tls`:
+
+`npm i --save-dev tls@npm:@iangrainger/angular-testing-library-schematic`
+
+## Use
+
+Run `ng g c my-component` as you normally would, then `ng g tls:tls my-component` to overwrite the spec with an angular-testing-library specific one.
+
+## Known issues
+
+This library doesn't have all the smarts of the normal component generator, so it won't (for example) work correctly if you run if from the project route (the file should be created in `src/app`, then!). It also can't deal with the component generator's 'flat' option etc.
 
 ### Testing
 
@@ -25,4 +45,3 @@ npm publish
 ```
 
 That's it!
- 
