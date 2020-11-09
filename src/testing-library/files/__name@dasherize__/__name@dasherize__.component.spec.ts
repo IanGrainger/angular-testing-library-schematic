@@ -11,7 +11,7 @@ describe('<%= classify(name) %>Component', () => {
     expect(rr.fixture.componentInstance).toBeTruthy();
   });
 
-  it('should render content', async () => {
+  it('should show message [<%= dasherize(name) %> works!]', async () => {
     await render(<%= classify(name) %>Component, renderOptions);
     expect(screen.getByText('<%= dasherize(name) %> works!')).not.toBeNull();
   });
