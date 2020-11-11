@@ -8,6 +8,8 @@ Using `ng g c my-component` gives you a sparkly new spec file to write your test
 
 This package gives you a schematic that you can use to overwrite the default spec file with a _super_-sparkly angular-testing-library version!
 
+![Creating a component and using this schematic to replace the spec with a testing-library specific one](angular-testing-library-schema.gif)
+
 ## Installation
 
 Because the package name matters, npm install with an alias - I recommend `tls`:
@@ -27,6 +29,7 @@ This library doesn't have all the smarts of the normal component generator, so i
 To test locally, install `@angular-devkit/schematics-cli` globally and use the `schematics` command line tool. That tool acts the same as the `generate` command of the Angular CLI, but also has a debug mode.
 
 Check the documentation with
+
 ```bash
 schematics --help
 ```
