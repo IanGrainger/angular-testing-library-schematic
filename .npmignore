@@ -1,3 +1,5 @@
 # Ignores TypeScript files, but keeps definitions.
-# *.ts # we can't - we need the template!
+# these two lines should let me just include the ts files i need to
+#*.ts
+#!**/files/*.ts
 !*.d.ts
