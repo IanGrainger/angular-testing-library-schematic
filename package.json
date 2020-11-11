@@ -1,6 +1,6 @@
 {
   "name": "@iangrainger/angular-testing-library-schematic",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Angular Schematic to create an angular-testing-library spec file",
   "scripts": {
     "build": "tsc -p tsconfig.json",
@@ -9,7 +9,7 @@
   "keywords": [
     "schematics"
   ],
-  "author": "",
+  "author": "Ian Grainger",
   "license": "MIT",
   "schematics": "./src/collection.json",
   "dependencies": {
@@ -22,5 +22,14 @@
     "@types/jasmine": "~3.5.0",
     "jasmine": "^3.5.0",
     "@schematics/angular": "^10.1.3"
-  }
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IanGrainger/angular-testing-library-schematic.git"
+  },
+  "bugs": {
+    "url": "https://github.com/IanGrainger/angular-testing-library-schematic/issues"
+  },
+  "homepage": "https://github.com/IanGrainger/angular-testing-library-schematic#readme"
 }
